@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/natalia/ontologies/2015/2/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/natalia/ontologies/2015/2/untitled-ontology-12"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/natalia/project1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#hasGameEngine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/natalia/project1#hasGameEngine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/natalia/project1#hasGenre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#hasPlatform -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/natalia/project1#hasPlatform"/>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#hasVideoGame -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/natalia/project1#hasVideoGame"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#abstract -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natalia/project1#abstract">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natalia/project1#ComputingPlatform"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natalia/project1#VideoGame"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#cpu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natalia/project1#cpu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natalia/project1#ComputingPlatform"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#developer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natalia/project1#developer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natalia/project1#ComputingPlatform"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#gpu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natalia/project1#gpu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natalia/project1#ComputingPlatform"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#media -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natalia/project1#media">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natalia/project1#ComputingPlatform"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natalia/project1#VideoGame"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#minimum_age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natalia/project1#minimum_age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natalia/project1#VideoGame"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natalia/project1#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natalia/project1#ComputingPlatform"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natalia/project1#VideoGame"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#programmingLanguage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natalia/project1#programmingLanguage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natalia/project1#VideoGame"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#publisher -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/natalia/project1#publisher">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/natalia/project1#VideoGame"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#ComputingPlatform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natalia/project1#ComputingPlatform">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#cpu"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#media"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#name"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#abstract"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#developer"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#GameEngine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natalia/project1#GameEngine">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#hasPlatform"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/natalia/project1#ComputingPlatform"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#Games -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natalia/project1#Games">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/natalia/project1#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natalia/project1#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#VideoGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natalia/project1#VideoGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/natalia/project1#Games"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#abstract"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#developer"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#hasGenre"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/natalia/project1#Genre"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#media"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#programmingLanguage"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#publisher"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#hasPlatform"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/natalia/project1#ComputingPlatform"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#minimum_age"/>
+                <owl:someValuesFrom rdf:resource="&xsd;float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#hasGameEngine"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/natalia/project1#GameEngine"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/natalia/project1#name"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/natalia/project1#Work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/natalia/project1#Work"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
